@@ -1,4 +1,7 @@
+<div style="display: flex; justify-content: space-between;">
 <h1>Listing Users</h1>
+<%= link "New User", to: Routes.user_path(@conn, :new) %>
+</div>
 
 <table>
   <%= for user <- @users do %>
